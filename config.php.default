@@ -1,0 +1,45 @@
+<?php
+/**
+ * Example of config file for defining default metadata values and others no standards metadata fields
+ *
+ * @author Toni Prieto 
+ */
+
+
+//input and output folders
+$_inputFolder	="./input";
+$_outputFolder	="./output";
+
+//Debugging
+$_debug = true;
+
+//Default values
+//For each default metadata to include, declare an array with values for schema, element, qualifier and default value
+$_default_values = array(
+		array("schema" => "local","element"=>"citation","qualifier"=>"publicationName","value"=>"Journal title"), //Journal title
+		array("schema" => "dc","element"=>"publisher","qualifier"=>null,"value"=>"Publisher"), //Publisher
+		array("schema" => "dc","element"=>"identifier","qualifier"=>"issn","value"=>"ISSN"), //ISSN
+		array("schema" => "dc","element"=>"language","qualifier"=>"iso","value"=>"LANGUAGE"), //Language
+		array("schema" => "dc","element"=>"type","qualifier"=>null,"value"=>"Article") //Type				
+				);
+
+
+//Creative commons RDF file 
+// Change tot true to add custom license_rdf file
+$_add_creativecommons_file = false;
+//$_default_creativecommons_rdf_file = "./license_rdf";
+
+//PublicationName for dc.relation.ispartof
+//$_default_publicationName = "";
+
+
+//Citation fields
+$_mdIssue 				= array("schema" => "local","element"=>"citation","qualifier"=>"number");
+$_mdPublicationName 	= array("schema" => "local","element"=>"citation","qualifier"=>"publicationName");
+$_mdStartingPage 		= array("schema" => "local","element"=>"citation","qualifier"=>"startingPage");
+$_mdEndingPage 			= array("schema" => "local","element"=>"citation","qualifier"=>"endingPage");
+$_mdVolume 				= array("schema" => "local","element"=>"citation","qualifier"=>"volume");
+
+//Keyword field
+$_mdKeywords 			= array("schema" => "dc","element"=>"subject","qualifier"=>null);
+?>
