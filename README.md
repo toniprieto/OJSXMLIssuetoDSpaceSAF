@@ -13,4 +13,5 @@ CLI tool for converting exported OJS Issues files to DSpace Simple Archive Forma
 
 
 [1] https://pkp.sfu.ca/wiki/index.php/Importing_and_Exporting_Data#Exporting_Articles_and_Issues_From_the_Web
+
 [2] https://wiki.duraspace.org/display/DSDOC5x/Importing+and+Exporting+Items+via+Simple+Archive+Format
