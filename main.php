@@ -305,7 +305,7 @@ function printMetadata($numArticle,$metadata)
 		if (isset($md["confidence"])) 	$confidence = $md["confidence"];
 		else						 	$confidence = null;
 
-		print $schema . "." . $element . (isset($qualifier)?"." . $qualifier:"") . " = " . $value . " " . (isset($authority)?"Authority:" . $authority:"") . " " . (isset($confidence)?"Authority:" . $confidence:"") . "\n";	
+		print $schema . "." . $element . (isset($qualifier)?"." . $qualifier:"") . " = " . $value . " " . (isset($authority)?"Authority:" . $authority:"") . " " . (isset($confidence)?"Confidence:" . $confidence:"") . "\n";	
 	}
 	print "\n";
 }
